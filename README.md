@@ -130,6 +130,13 @@ export ZAPIER_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 **用途**: 连接 5000+ App 自动化
 
+### AgentMail (Email API Service)
+```bash
+# 注册地址: https://www.agentmail.to/
+export AGENTMAIL_API_KEY="am_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: AI Agent 邮箱收发、一次性邮箱、自动化邮件工作流
+
 ---
 
 ## 📱 社交媒体
