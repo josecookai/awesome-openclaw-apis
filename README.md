@@ -99,14 +99,13 @@ export PERPLEXITY_API_KEY="pplx-xxxxxxxxxxxxxxxx"
 
 ## 💼 生产力工具
 
-### Notion
+### AgentMail (Email API Service)
 ```bash
-# 注册地址: https://www.notion.so/my-integrations
-# 步骤: 创建 Integration → 复制 Token
-export NOTION_TOKEN="secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-export NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# 注册地址: https://www.agentmail.to/
+# 费用: 免费+收费（以官网为准）
+export AGENTMAIL_API_KEY="am_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
-**用途**: 知识库、项目管理、笔记同步
+**用途**: AI Agent 邮箱收发、一次性邮箱、自动化邮件工作流
 
 ### Google Workspace
 ```bash
@@ -116,6 +115,23 @@ goog auth credentials /path/to/credentials.json
 goog auth add your@gmail.com --services gmail,calendar,drive
 ```
 **用途**: Gmail、Calendar、Drive、Docs、Sheets
+
+### Notion
+```bash
+# 注册地址: https://www.notion.so/my-integrations
+# 步骤: 创建 Integration → 复制 Token
+export NOTION_TOKEN="secret_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+export NOTION_DATABASE_ID="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 知识库、项目管理、笔记同步
+
+### Resend (Email API)
+```bash
+# 注册地址: https://resend.com/emails
+# 费用: 免费+收费（以官网为准）
+export RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 事务邮件发送、邮件模板、开发者友好 Email API
 
 ### Todoist
 ```bash
@@ -130,20 +146,6 @@ export TODOIST_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 export ZAPIER_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 **用途**: 连接 5000+ App 自动化
-
-### AgentMail (Email API Service)
-```bash
-# 注册地址: https://www.agentmail.to/
-export AGENTMAIL_API_KEY="am_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-**用途**: AI Agent 邮箱收发、一次性邮箱、自动化邮件工作流
-
-### Resend (Email API)
-```bash
-# 注册地址: https://resend.com/emails
-export RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
-**用途**: 事务邮件发送、邮件模板、开发者友好 Email API
 
 ---
 
@@ -310,7 +312,9 @@ export BRAVE_API_KEY=""
 export PERPLEXITY_API_KEY=""
 
 # === 生产力 ===
+export AGENTMAIL_API_KEY=""
 export NOTION_TOKEN=""
+export RESEND_API_KEY=""
 export TODOIST_API_KEY=""
 export ZAPIER_API_KEY=""
 
