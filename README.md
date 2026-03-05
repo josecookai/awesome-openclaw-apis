@@ -17,6 +17,7 @@
 - [开发工具](#开发工具)
 - [多媒体](#多媒体)
 - [生活服务](#生活服务)
+- [Top 100 场景清单](#top-100-场景清单)
 - [注册指南](#注册指南)
 - [环境变量配置](#环境变量配置)
 
@@ -243,6 +244,12 @@ export UBER_SERVER_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 # 注册地址: https://openweathermap.org/api
 export OPENWEATHER_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
+
+---
+
+## 📚 Top 100 场景清单
+
+- [Top 100 AI Agent Native 生产力 API 清单](./TOP100_AGENT_NATIVE_APIS.md)
 
 ---
 
