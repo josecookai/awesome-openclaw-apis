@@ -4,7 +4,7 @@
 
 > AI Native API 注册指南 - 为你的 OpenClaw 配置最强 AI 能力
 
-[English](./README.md) | [中文](./README.zh.md)
+[中文](./README.md)
 
 ---
 
@@ -95,6 +95,14 @@ export PERPLEXITY_API_KEY="pplx-xxxxxxxxxxxxxxxx"
 ```
 **用途**: 实时问答、研究助手
 
+### SerpAPI (搜索)
+```bash
+# 注册地址: https://serpapi.com/search-api
+# 费用: Free Trial / Paid
+export SERPAPI_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 实时网页搜索、返回结构化 Google 搜索结果
+
 ---
 
 ## 💼 生产力工具
@@ -145,6 +153,24 @@ export RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 **用途**: 事务邮件发送、邮件模板、开发者友好 Email API
 
+### Airtable (在线数据库)
+```bash
+# 注册地址: https://airtable.com/developers/web/api/introduction
+# 费用: Free / Paid
+export AIRTABLE_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# 可选：Base ID
+export AIRTABLE_BASE_ID="appxxxxxxxxxxxxxxxx"
+```
+**用途**: 表格化数据库、结构化数据管理
+
+### Stripe (支付)
+```bash
+# 注册地址: https://docs.stripe.com/api
+# 费用: Paid（按交易/用量计费）
+export STRIPE_API_KEY="stripe_api_key_here"
+```
+**用途**: 支付、订阅、账单、收款自动化
+
 ---
 
 ## 📱 社交媒体
@@ -173,6 +199,17 @@ export SLACK_BOT_TOKEN="xoxb-xxxxxxxxxxxx-xxxxxxxxxxxx-xxxxxxxxxxxxxxxxxxxxxxxx"
 export SLACK_SIGNING_SECRET="xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 
+### Twilio (短信/语音/WhatsApp)
+```bash
+# 注册地址: https://www.twilio.com/docs/api
+# 费用: Paid（按用量）
+export TWILIO_ACCOUNT_SID="ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+export TWILIO_AUTH_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# 可选：用于发短信的号码
+export TWILIO_FROM_NUMBER="+1234567890"
+```
+**用途**: SMS、语音、WhatsApp 消息发送与验证
+
 ---
 
 ## 💻 开发工具
@@ -196,6 +233,17 @@ export GITLAB_TOKEN="glpat-xxxxxxxxxxxxxxxxxxxx"
 export DOCKER_USERNAME="your-username"
 export DOCKER_PASSWORD="your-password"
 ```
+
+### Supabase
+```bash
+# 注册地址: https://supabase.com/docs/reference/api
+# 费用: Free / Paid tiers
+export SUPABASE_URL="https://xxxxxxxxxxxxxxxx.supabase.co"
+export SUPABASE_ANON_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+# 可选（服务端使用）:
+export SUPABASE_SERVICE_ROLE_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 数据库 + Auth + Storage 一体化后端能力，适合快速搭建全栈应用
 
 ---
 
@@ -244,6 +292,14 @@ export UBER_SERVER_TOKEN="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 # 注册地址: https://openweathermap.org/api
 export OPENWEATHER_API_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
+
+### Mapbox (地图)
+```bash
+# 注册地址: https://docs.mapbox.com/api/overview/
+# 费用: Free tier / Paid usage
+export MAPBOX_ACCESS_TOKEN="pk.xxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 地图、地理编码、导航、位置服务
 
 ---
 
@@ -308,23 +364,37 @@ export EXA_API_KEY=""
 export TAVILY_API_KEY=""
 export BRAVE_API_KEY=""
 export PERPLEXITY_API_KEY=""
+export SERPAPI_API_KEY=""
 
 # === 生产力 ===
 export NOTION_TOKEN=""
 export TODOIST_API_KEY=""
 export ZAPIER_API_KEY=""
+export RESEND_API_KEY=""
+export AIRTABLE_API_KEY=""
+export AIRTABLE_BASE_ID=""
+export STRIPE_API_KEY=""
 
 # === 社交 ===
 export TWITTER_BEARER_TOKEN=""
 export TELEGRAM_BOT_TOKEN=""
 export SLACK_BOT_TOKEN=""
+export TWILIO_ACCOUNT_SID=""
+export TWILIO_AUTH_TOKEN=""
+export TWILIO_FROM_NUMBER=""
 
 # === 开发 ===
 export GITHUB_TOKEN=""
+export SUPABASE_URL=""
+export SUPABASE_ANON_KEY=""
+export SUPABASE_SERVICE_ROLE_KEY=""
 
 # === 多媒体 ===
 export ELEVENLABS_API_KEY=""
 export REPLICATE_API_TOKEN=""
+
+# === 生活服务 ===
+export MAPBOX_ACCESS_TOKEN=""
 
 echo "✅ OpenClaw API 环境变量已加载"
 ```
@@ -346,10 +416,10 @@ echo "source ~/.openclaw_env" >> ~/.bashrc
 ## 新增 API: [API名称]
 
 **基本信息:**
-- 名称: 
+- 名称:
 - 类型: [AI模型/搜索/生产力/社交/开发/多媒体/生活服务]
-- 官网: 
-- 定价: 
+- 官网:
+- 定价:
 
 **注册步骤:**
 1. 访问 [注册链接]
