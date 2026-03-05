@@ -137,6 +137,13 @@ export AGENTMAIL_API_KEY="am_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
 ```
 **用途**: AI Agent 邮箱收发、一次性邮箱、自动化邮件工作流
 
+### Resend (Email API)
+```bash
+# 注册地址: https://resend.com/emails
+export RESEND_API_KEY="re_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+**用途**: 事务邮件发送、邮件模板、开发者友好 Email API
+
 ---
 
 ## 📱 社交媒体
